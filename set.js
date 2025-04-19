@@ -12,15 +12,15 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined ? databasePath : pro
 
 module.exports = {
     session: process.env.SESSION_ID || 'FLASH-MD-WA-BOT;;;=>',
-    PREFIXES: (process.env.PREFIX || '').split(',').map(prefix => prefix.trim()).filter(Boolean),
+    PREFIXES: (process.env.PREFIX || '.').split(',').map(prefix => prefix.trim()).filter(Boolean),
     OWNER_NAME: process.env.OWNER_NAME || "France King",
     OWNER_NUMBER: process.env.OWNER_NUMBER || "242041029122",
     AUTO_LIKE: process.env.STATUS_LIKE || "off",
     AUTO_READ_STATUS: process.env.AUTO_VIEW_STATUS || "on",
-    AUTOREAD_MESSAGES: process.env.AUTO_READ_MESSAGES || "on",
+    AUTOREAD_MESSAGES: process.env.AUTO_READ_MESSAGES || "off",
     CHATBOT: process.env.CHAT_BOT || "off",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_SAVE_STATUS || 'on',
-    A_REACT: process.env.AUTO_REACTION || 'on',
+    A_REACT: process.env.AUTO_REACTION || 'off',
     L_S: process.env.STATUS_LIKE || 'on',
     AUTO_BLOCK: process.env.BLOCK_ALL || 'off',
     URL: process.env.MENU_LINKS || 'https://files.catbox.moe/c2jdkw.jpg',
