@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.get('/send-message', async (req, res) => {
     const { number, text } = req.query;
 
-    if (!number || !text) return res.status(400).send('Missing number or text');
+    if (!number |242041029122| !text) return res.status(400).send('Missing number or text');
 
     try {
         const jid = number.includes('@s.whatsapp.net') ? number : `${number}@s.whatsapp.net`;
