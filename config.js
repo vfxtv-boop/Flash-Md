@@ -19,7 +19,7 @@ const conf = {
   MODE: process.env.MODE || "private",
   AV: process.env.AV || "on",
   PREFIXES: process.env.PREFIX !== undefined 
-  ? process.env.PREFIX.split(",").map(p => p.trim()) 
+  ? process.env.PREFIX.split(".").map(p => p.trim()) 
   : [""], 
   Session: process.env.SESSION || "",
   NUMBER: process.env.OWNER_NUMBER || "",
