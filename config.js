@@ -5,7 +5,7 @@ const conf = {
   AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "on",
   AUTO_LIKE: process.env.AUTO_LIKE || "on",
   AUTO_READ_DM: process.env.AUTO_READ_DM || "off",
-  AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || "off",
+  AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || "true",
   ADM: process.env.ANTI_DELETE || "on",
   ON: process.env.OWNER_NAME || "FLASH-MD",
   ANTICALL: process.env.ANTICALL || "off",
@@ -20,9 +20,9 @@ const conf = {
   AV: process.env.AV || "on",
   PREFIXES: process.env.PREFIX !== undefined 
   ? process.env.PREFIX.split(",").map(p => p.trim()) 
-  : [""], 
+  : ["."], 
   Session: process.env.SESSION || "",
-  NUMBER: process.env.OWNER_NUMBER || "",
+  NUMBER: process.env.OWNER_NUMBER || "242041029122",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || ""
 };
